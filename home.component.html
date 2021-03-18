@@ -1,0 +1,204 @@
+
+
+
+
+
+
+
+
+ <!-- <a routerLink="/addemployee">ADD EMPLOYEE</a><br><br> -->
+
+
+
+
+ <div class="container-fluid">
+     <app-header></app-header>
+  
+     
+     <div style=" position: sticky;top: 0; position: -webkit-sticky; ">
+         <button class="btnclass btn btn-success" (click)="onAddEmpolyee()" >Add Employee</button>
+        
+     </div>
+ 
+
+     <div class="row">
+         <div class="col-md-12 col-sm-12 col-lg-12">
+             <div class="tableFixHead">
+                 <table class="table table-bordered table-hover table-dark">
+                     <thead>
+                      
+                         <th>Id</th>
+                         <th>Firstname</th>
+                         <th>Lastname</th>
+                         <th>Address</th> 
+                         <th>DOB</th>
+                         <th>Mobile</th>
+                         <th>City</th>
+                         <th>Action</th>
+                         
+                     </thead>
+                     
+                         <tbody>
+                             <tr *ngFor="let item of post">
+                                
+                             <td>{{item.empid}}</td>
+                             <td>{{item.firstname}}</td>
+                             <td>{{item.lastname}}</td>
+                             <td>{{item.address}}</td>
+                             <td>{{item.dob}}</td>
+                             <td>{{item.mobile}}</td>
+                             <td>{{item.city}}</td>
+                             <td>
+                                <button class=" btn btn-danger" (click)="ondelete(item)">Delete</button> 
+                                <button class=" btn btn-warning" (click)="onUpdatefromView(item)">Update</button>
+                                
+                            </td>
+    
+                             
+                             </tr>
+                         </tbody>
+ 
+                     
+                 </table>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ 
+ 
+ <!-- 
+ <table  border="1px">
+     <thead>
+         <th>Id</th>
+         <th>Country</th>
+         <th>Name</th>
+         <th>Phone Number</th> 
+         <th>Department Id</th>
+         <th>Status</th>
+         <th>Created dtm</th>
+         <th>Created By</th>
+         <th>Updated dtm</th>
+         <th>Updated By</th>
+         <th>Action</th>
+     </thead>
+ 
+ <tbody *ngFor="let item of post">
+     <td>{{item.id}}</td>
+     <td>{{item.country.cname}}</td>
+     <td>{{item.name}}</td>
+     <td>{{item.phoneno}}</td>
+     <td>{{item.departmentid}}</td>
+     <td>{{item.status}}</td>
+     <td>{{item.createddtm}}</td>
+     <td>{{item.createdby}}</td>
+     <td>{{item.updateddtm}}</td>
+     <td>{{item.updatedby}}</td>
+     <td>
+ 
+         <a routerLink="/updatemployee" [queryparams]="myobj">ADD EMPLOYEE</a><br><br> -->
+        <!-- <button (click)="onupdate(item)">update</button> -->
+ 
+ 
+ <!-- 
+     <button (click)="onUpdatefromView(item)">Update</button><br><br>
+     <button (click)="ondelete(item)">Delete</button>
+     </td>
+ </tbody>
+ 
+ </table> -->
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <p>my-http works!</p> -->
+ <!-- 
+ <label for="">Title: &nbsp;&nbsp;</label>
+ <input #inputtitle type="text" placeholder="enter the title"><br><br>
+ 
+ 
+ <label for="">Body: &nbsp;&nbsp;</label>
+ <input #inputbody type="text" placeholder="enter the Body"><br><br>
+ 
+ <button (click)="onaddData(inputtitle.value,inputbody.value)">Add Data</button>
+ <hr>
+ 
+ 
+ <div [hidden]="ishidden">
+     <label for="">Id:&nbsp;&nbsp;</label>
+     <input type="text"  [(ngModel)]="Id" readonly><br><br>
+     <label for="">Title:&nbsp;&nbsp;</label>
+     <input type="text"  [(ngModel)]="Title"><br><br>
+     <label for="">Body:&nbsp;&nbsp;</label>
+     <input type="text"  [(ngModel)]="Body"><br><br>
+     <button (click)="onfinalupdate()">send data</button><br><br>
+ 
+ 
+ 
+ 
+ </div>
+ 
+ 
+ 
+ <hr>
+ 
+ 
+ 
+ 
+ 
+ <table border="1px">
+     <thead>
+         <th>id</th>
+         <th>title</th>
+         <th>body</th>
+         <th>Action</th>
+ 
+     </thead>
+     <tbody *ngFor="let item of post">
+         <td>{{item.id}}</td>
+         <td>{{item.title}}</td>
+         <td>{{item.body}}</td>
+         <td><button (click)="onupdate(item)">update</button>
+         <button (click)="ondelete(item)">Delete</button>
+         </td>
+ 
+     </tbody>
+ </table> -->
+ 
+ <!-- 
+ <ul>
+     <li *ngFor="let item of post">
+ 
+         {{item.id}}
+         {{item.age}}
+         {{item.name}}
+         {{item.status}}
+ 
+     </li>
+ </ul> -->
+ 

@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <app-header></app-header>
+ 
+    
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-lg-12">
+
+
+
+
+<div class="form-group">
+
+
+
+
+    
+<label for=""> First Name: &nbsp;&nbsp;</label>
+<input  #inputfirstname type="text" placeholder="enter the first name" class="form-control"><br><br>
+
+
+<label for=""> Last Name: &nbsp;&nbsp;</label>
+<input  #inputlastname type="text" placeholder="enter the last name" class="form-control"><br><br>
+
+<label for="">Address: &nbsp;&nbsp;</label>
+<input  #add type="text" placeholder="enter the address" class="form-control"><br><br>
+
+<label for=""> dob: &nbsp;&nbsp;</label>
+<input  #dob type="text" placeholder="enter the dob" class="form-control"><br><br>
+
+<label for=""> mobile: &nbsp;&nbsp;</label>
+<input  #mobile type="text" placeholder="enter the mobile" class="form-control"><br><br>
+
+
+<label for="">city: &nbsp;&nbsp;</label>
+<input  #city type="text" placeholder="enter the city" class="form-control"><br><br>
+
+
+
+
+
+
+
+
+
+
+<button class="btn btn-success" (click)="onaddData(inputfirstname.value,inputlastname.value,add.value,dob.value,mobile.value,city.value)">Add Employee</button><br><br>
+<a routerLink="/home">Home</a><br><br>
+
+<hr>
+</div>
+</div>
+</div>
+</div>
